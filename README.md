@@ -13,6 +13,9 @@ dependencies:
 ```dart
 import 'package:e_invoice_generator/e_invoice_generator.dart';
 ```
+<table>
+<tr>
+<td>
 
 
 ```dart
