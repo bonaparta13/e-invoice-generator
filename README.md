@@ -1,7 +1,8 @@
 
 # E-invoice Generator
 
-this is package is specially
+the package generates Qr code compitable with Electronice invoice in KSA
+
 ## Installation 
 
 1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
@@ -9,6 +10,8 @@ this is package is specially
 dependencies:
   e_invoice_generator: ^0.0.1
 ```
+
+
 2. Import the package and use it in your Flutter App.
 ```dart
 import 'package:e_invoice_generator/e_invoice_generator.dart';
