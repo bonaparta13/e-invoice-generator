@@ -1,7 +1,7 @@
 
 # E-invoice Generator
 
-the package generates Qr code compitable with Electronice invoice in KSA
+the package generates Qr code compitable with Electronic Invoice in KSA
 
 ## Installation 
 
