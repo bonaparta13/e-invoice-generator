@@ -28,7 +28,7 @@ import 'package:e_invoice_generator/e_invoice_generator.dart';
               size: 200,
             ),
 ```
-the code generate Qr Code whice can be scanned with any KSA E-invoice Qr Reader [try here](https://play.google.com/store/apps/detailsid=com.posbankbh.einvoiceqrreader)  
+the code generate Qr Code whice can be scanned with any KSA E-invoice Qr Reader [try here](https://play.google.com/store/apps/details?id=com.posbankbh.einvoiceqrreader)  
 
 
 <img  src="https://user-images.githubusercontent.com/67749770/156076878-77b5efef-5d58-436c-92de-41cdb99411a3.jpg"  width="400">
