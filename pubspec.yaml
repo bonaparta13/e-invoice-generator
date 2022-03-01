@@ -1,5 +1,5 @@
 name: e_invoice_generator
-description: A new Flutter package project.
+description: the package generates Qr code compatible with Electronic Invoice in KSA
 version: 0.0.1
 homepage: https://github.com/F-BONAPARTA/e-invoice-generator
 
