@@ -8,7 +8,7 @@ the package generates Qr code compatible with Electronic Invoice in KSA
 1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
 ```yaml
 dependencies:
-  e_invoice_generator: ^0.0.1
+  e_invoice_generator: ^0.0.2
 ```
 
 
