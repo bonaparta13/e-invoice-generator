@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
-import 'package:qr_flutter/qr_flutter.dart';
+import 'package:qr_bar_code/qr/qr.dart';
 
 class EinvoiceGenerator extends StatelessWidget {
   const EinvoiceGenerator({
@@ -12,8 +12,7 @@ class EinvoiceGenerator extends StatelessWidget {
     required this.totalWithVat,
     this.backgroundColor = Colors.transparent,
     this.size = 200,
-    this.color,
-    this.eyeShape,
+    this.eyeStyle,
   }) : super(
           key: key,
         );
@@ -23,12 +22,12 @@ class EinvoiceGenerator extends StatelessWidget {
   final String totalWithVat;
   final double size;
   final Color backgroundColor;
-  final Color? color;
-  final QrEyeShape? eyeShape;
+  final QREyeStyle? eyeStyle;
 
   String _getQrCodeContent() {
     var dateTime = DateTime.now();
-    final invoiceDate = "${dateTime.year}-${dateTime.month}-${dateTime.day} ${dateTime.hour}:${dateTime.minute}";
+    final invoiceDate =
+        "${dateTime.year}-${dateTime.month}-${dateTime.day} ${dateTime.hour}:${dateTime.minute}";
     final bytesBuilder = BytesBuilder();
     // 1. Seller Name
     bytesBuilder.addByte(1);
@@ -62,14 +61,16 @@ class EinvoiceGenerator extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) => QrImage(
-        data: _getQrCodeContent(),
-        version: QrVersions.auto,
-        size: size,
-        backgroundColor: backgroundColor,
-        eyeStyle: QrEyeStyle(
-          color: color,
-          eyeShape: eyeShape,
-        ),
-      );
+  Widget build(BuildContext context) {
+    return QRCode(
+      data: _getQrCodeContent(),
+      size: size,
+      eyeStyle: eyeStyle ??
+          const QREyeStyle(
+            eyeShape: QREyeShape.square,
+            color: Colors.black,
+          ),
+      backgroundColor: backgroundColor,
+    );
+  }
 }

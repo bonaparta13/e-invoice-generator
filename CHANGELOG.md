@@ -1,7 +1,11 @@
+## 0.1.0
+
+- update dependencies
+
 ## 0.0.2
 
-* Merged Small Changes
+- Merged Small Changes
 
 ## 0.0.1
 
-* initial release
+- initial release
