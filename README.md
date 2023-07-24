@@ -8,7 +8,7 @@ the package generates Qr code compatible with Electronic Invoice in KSA
 
 ```yaml
 dependencies:
-  e_invoice_generator: ^0.1.0
+  e_invoice_generator: ^0.1.2
 ```
 
 2. Import the package and use it in your Flutter App.

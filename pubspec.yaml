@@ -1,6 +1,6 @@
 name: e_invoice_generator
 description: the package generates Qr code compatible with Electronic Invoice in KSA
-version: 0.1.0
+version: 0.1.2
 homepage: https://github.com/bonaparta13/e-invoice-generator
 
 environment:
