@@ -26,8 +26,8 @@ class EinvoiceGenerator extends StatelessWidget {
 
   String _getQrCodeContent() {
     var dateTime = DateTime.now();
-    final invoiceDate =
-        "${dateTime.year}-${dateTime.month}-${dateTime.day} ${dateTime.hour}:${dateTime.minute}";
+    final invoiceDate = dateTime.toString();
+    //
     final bytesBuilder = BytesBuilder();
     // 1. Seller Name
     bytesBuilder.addByte(1);
