@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:qr_bar_code/qr/qr.dart';
 
 class EinvoiceGenerator extends StatelessWidget {
@@ -25,8 +26,8 @@ class EinvoiceGenerator extends StatelessWidget {
   final QREyeStyle? eyeStyle;
 
   String _getQrCodeContent() {
-    var dateTime = DateTime.now();
-    final invoiceDate = dateTime.toString();
+    var now = DateTime.now();
+    var invoiceDate = DateFormat("yyyy-MM-ddTHH:mm:ss").format(now);
     //
     final bytesBuilder = BytesBuilder();
     // 1. Seller Name
