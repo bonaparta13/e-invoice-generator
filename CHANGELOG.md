@@ -1,3 +1,7 @@
+## version: 0.2.0
+
+- update date format to match latest from zatca 
+
 ## version: 0.1.3
 
 - fix date format
